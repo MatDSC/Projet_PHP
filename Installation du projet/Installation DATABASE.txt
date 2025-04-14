@@ -1,0 +1,5 @@
+----- Installation du projet en local -----
+
+Le projet à été fait sur une base de données MariaDB sur docker desktop
+
+Fichier SQL dans config/init.sql
