@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-require_once 'pdo_config.php';
+require_once 'config/pdo_config.php';
 
 $page = isset($_GET['page']) ? $_GET['page'] : 'login';
 
@@ -17,22 +17,22 @@ if (!isset($_SESSION['user_id']) && !in_array($page, ['login', 'register'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Watchlist</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <?php
 switch($page) {
     case 'login':
-        include 'login.php';
+        include 'pages/login.php';
         break;
     case 'register':
-        include 'register.php';
+        include 'pages/register.php';
         break;
     case 'dashboard':
-        include 'dashboard.php';
+        include 'pages/dashboard.php';
         break;
     default:
-        include 'login.php';
+        include 'pages/login.php';
 }
 ?>
 </body>
