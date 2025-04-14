@@ -93,7 +93,7 @@ $movies = $stmt->fetchAll();
 <div class="dashboard">
     <div class="dashboard-header">
         <div>
-            <h1>Ma Watchlist</h1>
+            <h1>Watchlist PHP</h1>
             <p>Bienvenue, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>
         </div>
         <div class="header-actions">

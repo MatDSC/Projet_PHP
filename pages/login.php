@@ -27,8 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="error-message"><?php echo $error; ?></div>
         <?php endif; ?>
 
-        <form method="POST" action="index.php?page=login">
-            <div class="form-group">
+        <form method="POST" action="../index.php?page=login">
+            <div class="form-group"><br>
                 <label for="username">Nom d'utilisateur</label>
                 <input type="text" id="username" name="username" required>
             </div>
@@ -36,13 +36,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="form-group">
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" required>
-            </div>
+            </div><br>
 
             <button type="submit" class="btn btn-primary">Se connecter</button>
 
-            <p class="text-center">
+            <p class="text-center"><br>
                 Pas encore de compte?
-                <a href="index.php?page=register">S'inscrire</a>
+                <a href="../index.php?page=register">S'inscrire</a>
             </p>
         </form>
     </div>
