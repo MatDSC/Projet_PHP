@@ -94,7 +94,7 @@ $movies = $stmt->fetchAll();
     <div class="dashboard-header">
         <div>
             <h1>Watchlist PHP</h1>
-            <p>Bienvenue, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>
+            <p>Bienvenue, <?php echo htmlspecialchars($_SESSION['username']); ?> !</p>
         </div>
         <div class="header-actions">
             <a href="?page=dashboard&show=add" class="btn btn-primary">Ajouter un film</a>
@@ -133,7 +133,7 @@ $movies = $stmt->fetchAll();
                 <div class="form-actions">
                     <a href="?page=dashboard" class="btn btn-outline">Annuler</a>
                     <button type="submit" class="btn btn-primary">Ajouter</button>
-                </div>
+                </div><br>
             </form>
         </div>
     <?php endif; ?>
@@ -178,7 +178,7 @@ $movies = $stmt->fetchAll();
                     <button type="submit" class="btn btn-primary">Enregistrer</button>
                 </div>
             </form>
-        </div>
+        </div><br>
     <?php endif; ?>
 
     <div class="movies-grid">

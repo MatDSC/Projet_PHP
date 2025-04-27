@@ -18,6 +18,7 @@ if (!isset($_SESSION['user_id']) && !in_array($page, ['login', 'register'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchlist PHP</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
 <?php
